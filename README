@@ -1,0 +1,7 @@
+pfs2utf8 is a tool that aids in conversion of whole filesystems from
+using ISO 8859-1-encoded pathnames into UTF-8.
+
+It is available under the GNU GENERAL PUBLIC LICENSE version 3.
+
+- Peter Eriksson <pen@lysator.liu.se>
+

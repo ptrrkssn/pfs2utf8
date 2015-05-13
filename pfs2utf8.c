@@ -717,7 +717,7 @@ main(int argc,
 	    switch (argv[i][j])
 	    {
 	      case 'V':
-		printf("[pfs2utf8, version %s - Copyright (c) 2015 Peter Eriksson]\n", version);
+		printf("[pfs2utf8, version %s - Copyright (c) 2015 Peter Eriksson <pen@lysator.liu.se>]\n", version);
 		break;
 		
 	      case 'd':
