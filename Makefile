@@ -11,8 +11,8 @@ all: $(BINS)
 pfs2utf8: $(OBJS)
 	$(CC) -o pfs2utf8 $(OBJS)
 
-version version.c:
-	git tag | sed -e 's/^v//' | nawk '{ print "char version[] = \"" $$1 "\";" } END {exit 1}' >.version && mv .version version.c
+version:
+	git tag | sed -e 's/^v//' | nawk 'BEGIN {RC=1} {print "char version[] = \"" $$1 "\";" ; RC=0} END {exit RC}' >.version && mv .version version.c
 
 clean:
 	-rm -f $(BINS) core *~ \#* *.o
